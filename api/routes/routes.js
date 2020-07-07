@@ -19,7 +19,7 @@ router.post('/validateGrid', (req, res) => {
 });
 
 // Create a sudoku puzzle from sudoku grid.
-router.post('/createPuzzle/', (req, res) => {
+router.post('/createPuzzle', (req, res) => {
     let numberOfClues = JSON.parse(req.body.numberOfClues);
     let grid = JSON.parse(req.body.grid);
     res.status(200).json({
